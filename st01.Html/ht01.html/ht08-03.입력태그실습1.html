@@ -5,16 +5,34 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        label {  width: 100px; display: inline-block; }
+        label {
+            width: 100px;
+            display: inline-block;
+        }
     </style>
 </head>
 
 <body>
     <!-- fieldset & legend -->
     <!-- form 태그 필수 속성 추가. -->
-    <form>
+    <form action="" method="GET">
+        <fieldset> <!--인풋태그를 묶기-->>
+            <legend>입력양식</legend> <!--필드셋 안에 들어오게함-->>
+            <div>
+                <label for="A01">이름:</label><input type="text" name="" value="" id="A01">
+            </div>
+            <div>
+                <label for="A02">이메일 : </label><input type="text" name="" value="" id="A02">
+            </div>
+            <input type="submit" value="로그인">
+        </fieldset>
+
     </form>
 
 </body>
 
 </html>
+
+<!--★★★★★label 태그 인풋박스와 연결되어 있음
+    라벨태그의 내용을 눌러도 커서가 들어가서 표시되게함
+for 자리에 해당하게 하고 싶은  태그의 아이디를 넣음★★★★★-->

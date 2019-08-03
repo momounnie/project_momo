@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        label {width: 100px; display: inline-block; vertical-align:top; }
-        div {display:table; margin-left:auto; margin-right:auto; }
-        .orderinfo {  width: 250px; }
-        input[type='number'] { width:60px; }		
-		ul > li { list-style-type:none; }
+        label {
+            width: 100px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .orderinfo {
+            width: 250px;
+            display: inline-block;
+        }
+
+        input[type='number'] {
+            width: 60px;
+        }
+
+        ul>li {
+            list-style-type: none;
+        }
+
+        label {
+            width: 100px;
+        }
     </style>
 </head>
+
 <body>
 
-        <!--
+    <!--
 		작업 순서
 		 개인 정보 
          배송지 정보
@@ -22,5 +41,58 @@
 		  다시작성 : form 입력 값 초기화
 	  -->
     <h1>상품 주문서</h1>
+    <form action="">
+        <fieldset>
+            <legend>개인정보</legend>
+            <div>
+                <label for="a01">이름</label>
+                <input type="text" name="" id="a01" placeholder="이름을 입력하세요">
+            </div>
+            <div>
+                <label for="a02">연락처</label> <input type="text" name="" id="a02" placeholder="연락처를 입력하세요">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <div>
+                <label for="b01">주소</label> <input type="text" name="" id="b01" required>
+            </div>
+            <div>
+                <label for="b02">전화번호</label> <input type="text" name="" id="b02" required>
+            </div>
+            <div>
+                <label for="b03">메모</label> <textarea name="" id="b03" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>주문정보</legend>
+            <div>
+                <div class="orderinfo"><input type="checkbox" name="" id="" checked>과테말라 안티구아(100g)</div><input
+                    type="number" name="" id="">개
+            </div>
+            <div>
+                <div class="orderinfo"><input type="checkbox" name="" id="">인도네시아 만델링(100g)</div><input type="number"
+                    name="" id="">개
+            </div>
+            <div>
+                <div class="orderinfo"><input type="checkbox" name="" id="">탐라는도다 블렌딩(100g)</div><input type="number"
+                    name="" id="">개
+            </div>
+        </fieldset>
+        <div style="display: table; margin: 0 auto;">
+            <input type="submit" value="주문하기">
+            <input type="reset" value="다시작성">
+        </div>
+        <!--블락으로 쓰려면-->
+        <!--
+        <div style="text-align: center;">
+            <div style="margin: 0 auto;">
+                <input type="submit" value="주문하기">
+                <input type="reset" value="다시작성">
+            </div>
+        </div>-->
+        <!--블록으로 쓰면 두번을 써야해서 table-->>
+    </form>
 </body>
+
 </html>
