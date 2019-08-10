@@ -1,0 +1,79 @@
+블록태그
+div h p 목록태그
+인라인태그
+span img a
+인라인 -> 블럭
+display 속성
+블럭 -> 인라인
+float
+
+video audio img의 필수속성
+src
+
+video / audio
+cintrols 속성이 있으면 좋다
+
+시맨틱태그
+-header
+-footer
+-nav
+-aside
+-section
+-article
+-->  페이지의 뼈대
+어느사이트에도 있는 것들
+
+감싸는태그
+p- 텍스트
+div - 태그
+
+미디어 태그관련 속성
+
+src - 주소[위치]
+controls - 조정 컨트롤
+loop -> 반복되는 속성
+autoplay-자동속성은 사라짐 [자바스크립트로 설정]
+muted- 음소거
+
++높이 넓이 지정
+1.width,height 속성사용
+2.css (style 속성)
+3.id class 속성을 사용
+
+태그찾기 - 
+1.태그명
+2. id 속성 class 속성
+3. 일반속성
+
+스타일 태그는 헤더쪽에 두고 작업하기
+
+html 5가되면서 div가아니라zrticle 로 나우기 시작
+
+본문안에서 메뉴역할을 하는 태그
+aside -> 페이지마다 내용이다름
+
+
+css
+1.위에서 아래로
+2.위부터 시계방향
+3.높이 [비유]
+담장바깥 - 마진
+담벼락 - 보더
+집-태그
+마당-패딩
+4.바깥에서 안으로
+
+웹에서단위
+px- pc,랩탑등
+%-모바일등 다양한 기기
+
+컬러: 투명처리 할때만 rgba
+나머지는 16진수 000000~ffffff
+
+많이쓰는 함수 (css)
+
+url: 경로설정
+calc : 너비계산
+rgba : 투명처리
+
+
