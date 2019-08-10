@@ -1,52 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML5 Example Preview</title>
 </head>
+<style>
+    /* * { padding: 0; margin: 0;  } */
+    header {
+        width: 100%;
+    }
+    section {
+        float: left;
+        border-bottom: 1px solid darkgray;
+        clear: both;
+    }
+    .text {
+        margin-left: 30px;
+    }
+    #menu {
+        height: 50px;
+        border-top: 1px solid darkgrey;
+        border-bottom: 1px solid darkgrey;
+    }
+    #menu ul {
+        float: left;
+        height: 100%;
+        display: flex; align-items: center;
+        margin: 0;
+    }
+    #menu form {
+        float: right;
+        height: 100%;
+        display: flex; align-items: center;
+    }
+    #menu form input[type="text"]
+    {
+        float: left;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+       
+    }
+    #menu form input[type="submit"]
+    {
+        float: left;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;        
+    }
+
+    #menu ul li {
+        list-style: none;
+        margin-right: 28px;
+    }
+    aside {
+        float: right;
+        width: 30%;
+        max-width: 300px;
+    }
+nav ul li {
+        list-style: none;
+    }
+    nav ul li a {
+        text-decoration: none;
+        padding-bottom: 5px;
+        display: inline-block;
+    }
+    footer {
+        clear: both;
+    }
+</style>
+
 <body>
-   <h1>HTML5 Example Preview</h1>
-   <h3>한빛아카데미</h3>
-   <ul style="list-style:disc;">
-       <li>HTML5</li>
-       <li>CSS3</li>
-       <li>JavaScript</li>
-   </ul>
-   <form action="">
-       <input type="text">
-       <input type="submit" value="검색">
-   </form>
+    <header>
+        <div class="text">
+            <h2>HTML5 Example Preview</h1>
+                <h4>한빛아카데미</h3>
+        </div>
+
+        <div id="menu">
+            <ul style="list-style:disc;">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+            <form action="">
+                <input type="text">
+                <input type="submit" value="검색">
+            </form>
+        </div>
+    </header>
+
+    <section>
+        <h3>HTML5 개요와 활용</h3>
+        <div style="margin-bottom: 50px;">
+            <p>2013년 02월 14일</p>
+            <img src="http://placehold.it/430x280" alt="430x280">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium
+                vitae
+                rhoncus lectus<br>
+                ullamcorper. Aliquam facilisis euismod diam sollicitudin commodo. Nunc sagittis sapien venenatis
+                lorem
+                vestibulum cursus<br>
+                pellentesque mi sodales. Donec pellentesque hendrerit turpis, vitae tempor nibh ultricies at.
+                Aliquam
+                consequat rutrum erat,<br>
+                vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula vitae bibendum odio
+                porta.
+                Aliquam elit arcu,<br>
+                venenatis in imperdiet ut, scelerisque non dolor. Donec in vulputate tortor. Fusce egestas
+                rutrum mi
+                quis
+                ultricies. Vivamus<br>
+                blandit augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus
+                massa
+                auctor
+                vitae.Integer non<br>
+                massa sit amet lacus accumsan blandit. Vivamus fermentum tellus at justo iaculis eu tempus lorem
+                venenatis.
+                Suspendisse<br>
+                quis eros consectetur tellus posuere commodo. In hac habitasse platea dictumst.
+            </p>
+            <p>
+                Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed magna vehicula
+                semper
+                ac ut<br>
+                enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum justo tortor, malesuada non tincidunt quis,
+                feugiat
+                ut
+                metus.<br>Maecenas varius neque ut diam ultrices scelerisque. Praesent lectus massa, tincidunt vel
+                adipiscing
+                non, vehicula
+                ut magna.<br>Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor risus.
+                Donec
+                accumsan ante vel
+                justo porttitor<br>volutpat.
+            </p>
+    </section>
+    <aside>
+        <nav>
+            <h4>카테고리</h4>
+            <ul>
+                <li><a href="">데이터</a></li>
+                <li><a href="">데이터</a></li>
+                <li><a href="">데이터</a></li>
+                <li><a href="">데이터</a></li>
+                <li><a href="">데이터</a></li>
+            </ul>
+            <h4>최근 글</h4>
+            <ul>
+                <li><a href="">데이터</a></li>
+                <li><a href="">데이터</a></li>
+                <li><a href="">데이터</a></li>
+                <li><a href="">데이터</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <footer>
+        <a href="">Created By Team-HeXagon</a>
+    </footer>
 </body>
+
 </html>
-
-
-
-
-
-
-
- 
-HTML5 개요와 활용
-2013년 02월 14일
-
- 이미지: http://placehold.it/430x280
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium vitae rhoncus lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin commodo. Nunc sagittis sapien venenatis lorem vestibulum cursus pellentesque mi sodales. Donec pellentesque hendrerit turpis, vitae tempor nibh ultricies at. Aliquam consequat rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula vitae bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non dolor. Donec in vulputate tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus massa auctor vitae. Integer non massa sit amet lacus accumsan blandit. Vivamus fermentum tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros consectetur tellus posuere commodo. In hac habitasse platea dictumst.
-
-
-Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed magna vehicula semper ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum justo tortor, malesuada non tincidunt quis, feugiat ut metus. Maecenas varius neque ut diam ultrices scelerisque. Praesent lectus massa, tincidunt vel adipiscing non, vehicula ut magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor risus. Donec accumsan ante vel justo porttitor volutpat.
-
-카테고리
-데이터
-데이터
-데이터
-데이터
-데이터
-최근 글
-데이터
-데이터
-데이터
-데이터
-Created By Team-HeXagon

@@ -1,33 +1,91 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title></title>
     <style>
-        * { padding: 10px; margin-bottom: 10px;}
-        html,body { height: 100%; }
-		body  *  {border: 1px solid black; }
-        header { height: 60px; }
-        nav { }
+        * {
+            padding: 0;
+            margin: 0;
+        }
 
-        #wrapbody {overflow: auto; }
-        section {width: 46%; float: left; vertical-align: bottom; display: }
-        aside {width: 46%; height:100%; float: right; }
-        article {width: 80%; margin-left:auto; margin-right:auto;}
+        html,
+        body {
+            height: 100%;
+            padding: 10px;
+        }
+
+        body header,
+        nav,
+        section,
+        article,
+        aside,
+        footer {
+            border: 1px solid black;
+            margin: 0 0 10px 0;
+        }
+
+        header {
+            height: 60px;
+        }
+
+        nav {}
+
+        #wrapbody {
+            overflow: auto;
+            height: 90px;
+        }
+
+        section {
+            width: 46%;
+            float: left;
+            vertical-align: bottom;
+            display:
+        }
+
+        aside {
+            width: 46%;
+            height: calc(100% - 10px);
+            float: right;
+        }
+
+        article {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         .col-container {
-            display: table; /* Make the container element behave like a table */
-            width: 100%; /* Set full-width to expand the whole page */
+            display: table;
+            /* Make the container element behave like a table */
+            width: 100%;
+            /* Set full-width to expand the whole page */
         }
 
         .col {
-            display: table-cell; /* Make elements inside the container behave like table cells */
+            display: table-cell;
+            /* Make elements inside the container behave like table cells */
         }
 
-        footer {height: 30px; clear: both;}
+        footer {
+            height: 30px;
+            clear: both;
+        }
     </style>
 </head>
-<body>
-</body>
-</html>
 
+<body>
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <div class="col-container" id="wrapbody">
+        <section class="col">Section
+            <article>article</article>
+            <article>article</article>
+        </section>
+        <aside class="col">Aside</aside>
+    </div>
+    <footer>Footer</footer>
+</body>
+
+</html>

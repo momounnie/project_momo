@@ -3,6 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS3 Selector Basic Page</title>
+    <style>
+        /*브라우저의 css를 사용하지 않는다는 설정*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*초기화 꼭 필요함!!*/
+        #header{
+            background-color: rgb(255, 108, 108);
+        }
+        #aside{
+            background-color: rgb(12, 157, 241);
+            float: left;
+            width: 20%;
+        }
+        #content{
+            background-color: greenyellow;
+            float: right;
+            /*width: calc(100% - 200px); 공백 꼭 띄우기! 중요!*/
+            width: 80%;
+        }
+
+    </style>
 </head>
 <body>
     <div id="header"><h2>#header 태그</h2></div>
@@ -11,4 +34,4 @@
         <div id="content"><h2>#content 태그</h2></div>
     </div>
 </body>
-</html>
+</html>
