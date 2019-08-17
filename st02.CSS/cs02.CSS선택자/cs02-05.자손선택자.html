@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>자식 선택자 / 자손 선택자</title>
     <style type="text/css">
+        div#header > h1 {
+            color: red;
+        }
         /* 자식 선택자
            아이디 header 의 자식들 중에 h1 을 찾아서
            h1 폰트의 색깔을 red로 만드시오.
            --> 1개 적용
         */
 
-        /* 자손 선택자
+        /* 자손(후손)선택자
            아이디 section 의 자손들 중에 h1 을 찾아서
            h1 폰트의 색깔을 orange로 만드시오.
            --> 2개 적용
         */
+        #section h1 {
+            color: orange;
+        }
     </style>
 </head>
+
 <body>
     <pre>
         자식 선택자
@@ -36,7 +44,7 @@
             <h1 class="title">Navigation</h1>
         </div>
     </div>
-    <hr >
+    <hr>
 
     <h2> 후손(자손) 선택자 </h2>
     <div id="section">
@@ -47,4 +55,5 @@
         </div>
     </div>
 </body>
-</html>
+
+</html>

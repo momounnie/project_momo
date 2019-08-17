@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>텍스트 속성</title>
 </head>
+<style>
+    .color_hexa {
+        color: #09fa04;
+    }
+
+    .color_rgba {
+        color: rgba(233, 255, 12, 0.5);
+    }
+
+    .color_name {
+        color: lightblue;
+    }
+
+    .align_left {
+        text-align: left;
+    }
+
+    .align_right {
+        text-align: right;
+    }
+
+    .align_center {
+        text-align: center;
+    }
+
+    .align_justify {
+        text-align: justify;
+        width: 100px;
+        border: 1px solid palegoldenrod;
+    }
+
+    .decoration1 {
+        text-decoration: none;
+    }
+    .decoration2 {
+        text-decoration:underline;
+    }
+    .decoration3 {
+        text-decoration: overline;
+    }
+    .decoration4 {
+        text-decoration: line-through;
+    }
+</style>
+
 <body>
     <pre>
         텍스트 색상 지정 
@@ -12,10 +58,10 @@
         text-decoration 속성 
     </pre>
     <h2> 텍스트 색상 지정 </h2>
-    <div>
-        <p class = "color_hexa"> #09fa04 </p>
-        <p class = "color_rgba"> rgba( 233, 255, 12, 0.5) </p>
-        <p class = "color_name"> lightblue </p>
+    <div class="color">
+        <p class="color_hexa"> #09fa04 </p>
+        <p class="color_rgba"> rgba( 233, 255, 12, 0.5) </p>
+        <p class="color_name"> lightblue </p>
     </div>
 
     <hr>
@@ -25,17 +71,17 @@
         <p class="align_left"> 텍스트 왼쪽 정렬!!! </p>
         <p class="align_center"> 텍스트 가운데 정렬!!! </p>
         <p class="align_right"> 텍스트 오른쪽 정렬!!! </p>
-        <p class="align_justify"> 텍스트 양쪽 정렬!!! </p>
+        <p class="align_justify"> 텍스트 양쪽 정렬!!! 균등분할 </p>
     </div>
 
     <hr>
 
     <h2> 텍스트 밑줄 설정 </h2>
-    <p class = "decoration1"> 텍스트 밑줄 표시하지 않기!!! </p>
-    <p class = "decoration2"> 텍스트 밑줄 표시!!! </p>
-    <p class = "decoration3"> 텍스트 영역 위로 선 표시!!! </p>
-    <p class = "decoration4"> 텍스트 영역을 가로지르는 선 표시!!! </p>
+    <p class="decoration1"> 텍스트 밑줄 표시하지 않기!!! </p>
+    <p class="decoration2"> 텍스트 밑줄 표시!!! </p>
+    <p class="decoration3"> 텍스트 영역 위로 선 표시!!! </p>
+    <p class="decoration4"> 텍스트 영역을 가로지르는 선 표시!!! </p>
 
 </body>
+
 </html>
-

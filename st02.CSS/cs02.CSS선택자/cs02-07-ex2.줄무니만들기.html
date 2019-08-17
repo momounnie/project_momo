@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>상태선택자</title>
     <style>
         /* 브라우저 스타일 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
+        tr:nth-child(3n+1) {
+            background-color: skyblue;
+        }
+
+        tr:nth-child(3n+2) {
+            background-color: lightgreen;
+        }
+
+        tr:nth-child(3n+0) {
+            background-color: lightpink;
+        }
     </style>
 </head>
+
 <body>
     <table>
         <tr>

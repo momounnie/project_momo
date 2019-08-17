@@ -1,9 +1,31 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>marign 실습</title>
+    <style>
+        div {
+            background-color: darkblue;
+            width: 200px;
+            height: 100px;
+        }
+
+        .box1 {
+            margin: 30px 50px 30px;
+        }
+        .box2 {
+            margin: 30px 50px;
+        }
+        .box3 {
+            margin:50px;
+        }
+        .box4 {
+            margin: 30px 5px 10px;
+        }
+    </style>
 </head>
+
 <body>
     <div class="box1"></div>
     <hr>
@@ -13,7 +35,12 @@
     <hr>
     <div class="box4"></div>
     <hr>
-    
+
     <span class="box4"></span>
 </body>
-</html>
+
+</html>
+<!--마진은 오른쪽 위부터 시작해서 시계방향
+속성값이 정해져있지 않은 경우에는 건너 방향에 있는 수치를 가져옴
+그러므로 서로 마주 보는 수치들이 같으면 하나로 축약할수 있다
+-->
