@@ -8,15 +8,18 @@
         div {
             margin: 20px;
         }
-
+        div > div
+        {
+            width: 200px;
+            height: 100px;
+            background-color: #fff;
+        }
         #borderstyle>div,
         #bordercolor>div,
         #borderwidth>div {
             width: 200px;
             height: 100px;
             float: left;
-            background: lightgray;
-        }
         }
 
         #borderstyle div.box1 {
@@ -35,7 +38,7 @@
             border-left: 3px solid black;
             border-right: 3px dotted black;
             border-top: 3px dashed black;
-            border-bottom: 3px hidden black;
+            border-bottom: 3px double black;
 
         }
         #borderstyle::after,#bordercolor::after,#borderwidth::after{
@@ -65,10 +68,22 @@
         #borderwidth div.box1 {
             border: 1px solid #000;
         }
-        #borderwidth div.box1 {
-            border: 1px solid #000;
+        #borderwidth div.box2 {
+            outline: 3px solid #000;
         }
-
+        #borderwidth div.box3 {
+            border: 3px solid #000;
+        }
+        #borderwidth div.box4,#borderwidth div.box5 {
+            border-top: 5px solid #000;
+            border-right: 10px solid #000;
+            border-bottom: 15px solid #000;
+            border-left: 20px solid #000;
+        }
+        /*
+        ::after를 적을때는 clear:both content:"" display:block
+        3가지를 다 적어주어야 함 - 그래야 클리어가 제대로 적용됨
+        */
     </style>
 </head>
 

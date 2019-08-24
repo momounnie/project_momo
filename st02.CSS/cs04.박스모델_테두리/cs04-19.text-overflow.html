@@ -2,6 +2,29 @@
 <html>
 <head>
     <title>text-overflow</title>
+    <style>
+        div.a {
+            width: 100px;
+            border: 2px solid olivedrab;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        div.a:hover {
+            white-space: normal;
+        }
+        /*
+        white-spacing: wrap (줄바꿈 가능)
+        nowrap (줄바꿈 불가)
+        */
+        /*
+        overflow - 
+        hidden (숨기기)
+        */
+        /*
+        text- overflow : ellipsis (축약기호가 보이고 넘치는 내용은 숨김)
+        */
+    </style>
 </head>
 <body>
     <h1>The text-overflow</h1>

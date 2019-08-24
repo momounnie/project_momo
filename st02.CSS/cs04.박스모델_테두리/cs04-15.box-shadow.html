@@ -3,6 +3,27 @@
 <head>
     <meta charset="utf-8">
     <title>박스모델</title>
+    <style>
+         div{
+              border-radius: 20px;
+              text-align: center;
+              line-height: 100px;
+         }
+         /*X축(가로-오른쪽이 플러스),y(세로 - 위 방향이 마이너스),번짐,색상*/
+         .box1 {
+              box-shadow: +20px -20px 0 red;
+         }
+         .box2 {
+              box-shadow: +20px -20px 5px blue inset; 
+              }
+              /*테두리 안쪽 그림자*/
+         .box3 {
+              box-shadow: +20px +20px 5px orange;
+         }
+         .box4 {
+              box-shadow: 20px 20px 0 yellow inset;
+         }
+    </style>
 </head>
 <body>
 
@@ -27,4 +48,4 @@
     </div>
     
 </body>
-</html>
+</html>
