@@ -1,9 +1,137 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>HTML5 Basic Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #e6e6e6;
+        }
+        #page-wrapper {
+            width: 960px;
+            font-family: "맑은고딕";
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 10PX auto;
+            padding: 50px 50px 50px 50px;
+            box-sizing: border-box;
+        }
+
+        #main-header {
+            width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+
+        #main-header h2 {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        .outer-menu-item {
+            float: left;
+            list-style: none;
+            line-height: 30px;
+            margin-right: 50px;
+            align-items: center;
+        }
+
+        .pull-right {
+            float: right;
+            align-items: center;
+            display: flex;
+        }
+        #main-navigation {
+            border-top: 1px solid lightgray;
+            border-bottom: 1px solid lightgray;
+            height: 50px;
+        }
+
+        .outer-menu-item {
+            line-height: 50px;
+            padding-left: 20px;
+        }
+        
+        form {
+            padding-top: 10px;
+            padding-right: 20px;]
+        }
+
+        form [type="text"] {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-right : -10px;
+            border-right: none;
+        }
+
+        form [type="submit"] {
+
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-left: none;
+            width: 50px;
+        }
+
+        form input {
+            border: 1px solid lightgray;
+            box-sizing: border-box;
+            float: left;
+            height: 30px;
+        }
+
+        .article-title {
+            font-size: 1.6em;
+        }
+
+        #main-footer {
+            border-top: 1px solid lightgray;
+        }
+
+        #content {
+            position: relative;
+        }
+
+        #main-aside {
+            position: absolute;
+            top: 0;
+            padding-top: 50px;
+            right: 100px;
+            max-width: 200px;
+        }
+        #main-aside li {
+            list-style: none;
+        }
+        #main-aside li a {
+            text-decoration: none;
+            color: darkgray;
+        }
+        #main-section {
+            width: 710px;
+        }
+        .aside-list {
+            padding-bottom: 50px;
+        }
+        #main-section article {
+            padding-top: 50px;
+        } 
+        .article-header {
+            padding-bottom: 30px;
+        }
+        #main-footer {
+            padding-top: 20px;
+        }
+        .article-body {
+            padding-bottom: 20px;
+        } 
+    </style>
 </head>
+
 <body>
     <div id="page-wrapper">
         <header id="main-header">
@@ -65,9 +193,24 @@
                         <img src="http://placehold.it/430x280" />
                         <br />
                         <br />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium vitae rhoncus lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin commodo. Nunc sagittis sapien venenatis lorem vestibulum cursus pellentesque mi sodales. Donec pellentesque hendrerit turpis, vitae tempor nibh ultricies at. Aliquam consequat rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula vitae bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non dolor. Donec in vulputate tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus massa auctor vitae. Integer non massa sit amet lacus accumsan blandit. Vivamus fermentum tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros consectetur tellus posuere commodo. In hac habitasse platea dictumst.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem
+                            pretium vitae rhoncus lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin
+                            commodo. Nunc sagittis sapien venenatis lorem vestibulum cursus pellentesque mi sodales.
+                            Donec pellentesque hendrerit turpis, vitae tempor nibh ultricies at. Aliquam consequat
+                            rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula
+                            vitae bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non
+                            dolor. Donec in vulputate tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit
+                            augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus
+                            massa auctor vitae. Integer non massa sit amet lacus accumsan blandit. Vivamus fermentum
+                            tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros consectetur tellus
+                            posuere commodo. In hac habitasse platea dictumst.</p>
                         <br />
-                        <p>Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed magna vehicula semper ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum justo tortor, malesuada non tincidunt quis, feugiat ut metus. Maecenas varius neque ut diam ultrices scelerisque. Praesent lectus massa, tincidunt vel adipiscing non, vehicula ut magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor risus. Donec accumsan ante vel justo porttitor volutpat.</p>
+                        <p>Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed
+                            magna vehicula semper ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum
+                            justo tortor, malesuada non tincidunt quis, feugiat ut metus. Maecenas varius neque ut diam
+                            ultrices scelerisque. Praesent lectus massa, tincidunt vel adipiscing non, vehicula ut
+                            magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor
+                            risus. Donec accumsan ante vel justo porttitor volutpat.</p>
                     </div>
                 </article>
             </section>
@@ -98,7 +241,9 @@
         </footer>
     </div>
 </body>
-</html>
+
+</html>
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
@@ -108,8 +253,8 @@
         $('.outer-menu-item').mouseover(function () {
             $(this).find('.inner-menu').show();
         })
-        .mouseout( function () {
-            $(this).find('.inner-menu').hide();
-        });
+            .mouseout(function () {
+                $(this).find('.inner-menu').hide();
+            });
     });
 </script>

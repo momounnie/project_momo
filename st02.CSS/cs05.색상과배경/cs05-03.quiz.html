@@ -3,6 +3,29 @@
 <head>
     <meta charset="utf-8">
 	<title>배경 스타일</title>
+	<style>
+		.container {
+			background-image: url(../images/apple-bg.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 700px;
+			height: 500px;
+			position: relative;
+		}
+		.content {
+			position: absolute;
+			bottom: 80px;
+			left: 50px;
+			
+		}
+		.content h1 {
+			background-color : rgba(255,255,255,0.5) ;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 80px;
+			width: 600px;
+		}
+	</style>
 </head>
 <body>
 	<!-- background-image를 이용하여 배경 이미지 추가 -->
@@ -19,4 +42,4 @@
 		3. position 을 사용하여 위치 지정하기.
 	</pre>
 </body>
-</html>
+</html>

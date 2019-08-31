@@ -25,8 +25,6 @@
             background-color: white;
         }
 
-        #clip {}
-
         #clip>div {
             float: left;
             width: 20%;
@@ -103,6 +101,55 @@
         }
         #position .bg3 {
             background-position: bottom;
+        }
+        #size div {
+        background-image: url(../images/bg4.jpg);
+        background-repeat: no-repeat;
+        border: 1px solid #000;
+        width : 300px;
+        height: 300px;
+        float: left;
+        margin : 0 20px 20px 0;
+        }
+        #size .bg1 {
+            background-size: auto;
+        }
+        #size .bg2 {
+            background-size: 200px 150px;
+        }
+        #size .bg3 {
+            background-size: 60% 40%;
+        }
+        #size .bg4 {
+            background-size: contain;
+        }
+        #size .bg5 {
+            background-size: cover;
+        }
+        #size .bg6 {
+            background-size: 100% 100%;
+        }
+        #size::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+        #attachment  div
+        {
+            background-image: url(../images/momo01.jpg);
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 400px;
+            float: left;
+
+
+        }
+        #attachment .bg1 {
+            background-attachment: scroll;
+        }
+        #attachment .bg2 {
+            background-attachment: fixed;
+
         }
 
     </style>
@@ -231,6 +278,11 @@
         <div class="bg4">배경 이미지 사이즈 : contain</div>
         <div class="bg5">배경 이미지 사이즈 : cover</div>
         <div class="bg6">배경 이미지 사이즈 : 100% 100%</div>
+    </div>
+    <div id ="attachment">
+        <h2>background-attachment</h2>
+        <div class="bg1">scroll</div>
+        <div class="bg2">fixed</div>
     </div>
 </body>
 
