@@ -1,0 +1,116 @@
+/* Reset CSS  */
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video { max-width:100%; border:0; vertical-align:top; }
+a { vertical-align:top; text-decoration:none; color:#000; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+body { background:url(../ub_img/body_bg.jpg) repeat-x #23777a; font-family:'NanumGothicWeb', '돋움'; font-size:100%; line-height:1; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#header-left {
+    float: left;
+}
+#header-left ul li {
+    float: left;
+    margin-top: 20px;
+}
+#header-left h2 {
+    color:#fff;
+    line-height: 80px;
+    font-size: 2em;
+    margin-left: 20px; 
+}
+#header-right {
+    float: right;
+    width: 500px;
+    margin-top: 50px;
+    height: 80px;
+
+}
+#header-right ul li{
+    float: left;
+    width: 100px;
+    font-weight: 600;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#header-right ul li a {
+    color: #fff;
+}
+#header-left ul li a {
+    color: #fff;
+}
+.fa-search {
+    font-weight: 800;
+    color: #000;
+    padding-top: 6px;
+    display: block;
+}
+header::after {
+    clear: both; content:"";display: block;
+}
+nav ul li {
+    float: left;
+    width: 140px;
+    padding-top:20px; 
+    font-weight: 800;
+    color: #fff;
+}
+#search-bar {
+    height: 30px;
+}
+#search span {height: 30px; width: 30px; background:#fff; display: inline-block; margin-left: -6px;  text-align: center; margin-top: 2px;}
+#search {
+    width: 200px;
+}
+#search-bar {
+    text-indent:10px;
+}
+nav::after {
+    clear: both; content:"";display: block;
+}
+
+div#content {
+    height: calc(100% - 280px);
+}
+html,
+body,
+#wrap {
+    height: 100%;
+}
+footer {
+    width: 960px;
+    height:150px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding : 20px;
+    box-sizing: border-box;
+}
+footer #footer-left {
+    color: #323532;
+}
+#footer-left span {
+    float: left;
+    padding: 5px;
+}
+footer #footer-right {
+    color: #323532;
+    float: right;
+}
+#footer-right{
+    line-height: 180%;
+    font-size: 13px;
+
+}
+#footer-right p i {
+    margin-right: 7px;
+}
